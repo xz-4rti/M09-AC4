@@ -24,14 +24,23 @@
     </header>
 
     <section id="section1">
-        <div class="content">
-            <h1>Explorando el Multimedio en la Web</h1>
-            <p>Descubre cómo las imágenes, el audio y el video pueden transformar la experiencia digital. Aprende a
-                integrar y optimizar contenido multimedia para crear sitios web interactivos y dinámicos.</p>
-            <a href="https://www.w3schools.com/html/html_media.asp" class="btn">Learn More</a>
-        </div>
-        <div class="image">
-            <img src="/image/main.png" alt="Illustration">
+        <div class="content-main">
+            <div class="content">
+                <div>
+                    <h1>Explorando el Multimedio en la Web</h1>
+                </div>
+                <div>
+                    <p>Descubre cómo las imágenes, el audio y el video pueden transformar la experiencia digital.
+                        Aprende a
+                        integrar y optimizar contenido multimedia para crear sitios web interactivos y dinámicos.</p>
+                </div>
+                <div class="learn-more">
+                    <a href="https://www.w3schools.com/html/html_media.asp" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="image">
+                <img src="/image/main2.png" alt="Illustration">
+            </div>
         </div>
     </section>
 
@@ -58,35 +67,66 @@
 
     <section id="section3">
         <div class="container">
-            <div class="left">🠔</div>
+            <h1>🎧 Integración de Audio: Sonido para una Web Interactiva 🎧</h1>
             <div class="container-main">
-                <h1>🎧 Integración de Audio: Sonido para una Web Interactiva 🎧</h1>
-                <p>Best(WAV) to worst Quality(MP3)</p>
-                <div class="title">
-                    <h1>─୨ৎ─ WAV - BLUE by Yung Kai ─୨ৎ─</h1>
+                <div class="container1">
+                    <div class="title">
+                        <h1>─୨ৎ─ WAV - BLUE by Yung Kai ─୨ৎ─</h1>
+                    </div>
+                    <div class="album">
+                        <img src="./image/blue.jpg" alt="blue">
+                    </div>
+                    <div>
+                        <audio id="song" controls>
+                            <source src="./audio/yungkai-blue.wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
                 </div>
-                <div class="album">
-                    <img src="./image/blue.jpg" alt="blue">
+                <div class="container2">
+                    <div class="title">
+                        <h1>─୨ৎ─ OPUSS - BLUE by Yung Kai ─୨ৎ─</h1>
+                    </div>
+                    <div class="album">
+                        <img src="./image/blue2.jpeg" alt="blue">
+                    </div>
+                    <div>
+                        <audio id="song" controls>
+                            <source src="./audio/yungkai-blue.opus">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
                 </div>
-                <div>
-                    <audio id="song" controls>
-                        <source src="./audio/yungkai-blue.wav">
-                        Your browser does not support the audio element.
-                    </audio>
+                <div class="container3">
+                    <div class="title">
+                        <h1>─୨ৎ─ MP3 - BLUE by Yung Kai ─୨ৎ─</h1>
+                    </div>
+                    <div class="album">
+                        <img src="./image/blue3.jpeg" alt="blue">
+                    </div>
+                    <div>
+                        <audio id="song" controls>
+                            <source src="./audio/yungkai-blue.mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
                 </div>
             </div>
-            <div class="right">🠖</div>
+            <a href="https://www.w3schools.com/html/html5_video.asp" class="btn">Learn More</a>
     </section>
 
     <section id="section4">
         <div class="content">
             <h1>Vídeo en la Web: Reproducción y Compatibilidad</h1>
-            <p>Aprende a incrustar y optimizar videos en la web, garantizando compatibilidad con distintos formatos y
-                ofreciendo una experiencia fluida a los usuarios.</p>
+            <p>Descubre cómo integrar vídeos en la web, los formatos más comunes como MP4 y WebM, y técnicas para
+                garantizar compatibilidad y optimización en distintos navegadores y dispositivos.</p>
             <a href="https://www.w3schools.com/html/html5_video.asp" class="btn">Learn More</a>
         </div>
-        <div class="image">
-            <img src="/image/main.png" alt="Illustration">
+        <div class="video">
+            <video width="320" height="240" controls controls poster="/image/thumbnail.jpeg">
+                <source src="./lety.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
     </section>
 
@@ -95,7 +135,7 @@
             <h1>Contacto</h1>
             <p>Puedes ponerte en contacto conmigo a través de:</p>
             <ul>
-                <li><strong>Email:</strong> contacto@multimedioweb.com</li>
+                <li><strong>Email:</strong> aarati.gurung@estudiant.fjaverians.com</li>
                 <li><strong>Teléfono:</strong> +34 123 456 789</li>
                 <li><strong>Ubicación:</strong> Barcelona, España</li>
             </ul>

@@ -10,8 +10,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
-    background: #d3fdd3;
-    height: 10vh;
+    background: black;
+    color: white;
+    height: 5vh;
 }
 
 .logo {
@@ -27,17 +28,21 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 400;
 }
 
 .btn {
-    background: #036403;
+    background: #00000063;
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
     color: white;
     font-weight: 600;
+}
+
+header .btn {
+    background: #ffffff63;
 }
 
 /* SECTION 1 */
@@ -48,23 +53,50 @@ nav ul li a {
     justify-content: space-between;
     padding: 50px 10%;
     background: white;
-    border-radius: 10px;
-    height: 80vh;
+    height: 90vh;
+    background-image: url("/image/background3.jpg");
+    background-size: cover;
+}
+
+#section1 .content-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.068);
+    border-radius: 30px;
+    padding: 30px;
+    width: 90vw;
+    box-shadow: 5px 5px 10px #000;
+}
+
+#section1 .content-main .content {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#section1 .content-main .content .learn-more {
+    margin-top: 40px;
+}
+
+#section1 .content-main .content .learn-more .btn {
+    width: 10vh;
 }
 
 .content h1 {
     font-size: 40px;
-    color: #2E4A2F;
+    color: white;
 }
 
 .content p {
     font-size: 16px;
-    color: #555;
+    color: white;
     margin: 20px 0;
+    width: 30vw;
 }
 
 #section1 .image img {
-    width: 30vw;
+    width: 25vw;
 }
 
 /* SECTION 2 */
@@ -73,9 +105,9 @@ nav ul li a {
     align-items: center;
     justify-content: space-between;
     padding: 50px 10%;
-    background: #036403;
-    border-radius: 10px;
-    height: 70vh;
+    background-image: url("/image/background2.jpg");
+    background-size: cover;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -92,12 +124,17 @@ nav ul li a {
 }
 
 #section2 .content {
-    background-color: #d3fdd3da;
+    background-color: rgba(255, 255, 255, 0.068);
     padding: 70px;
     border-radius: 40px;
-    color: white;
     width: 80vw;
     box-shadow: 5px 5px 8px #000;
+    align-items: center;
+}
+
+#section2 .content h1,
+#section2 .content p {
+    color: white;
 }
 
 #section2 .slider-images img.active {
@@ -109,8 +146,8 @@ nav ul li a {
 }
 
 #section2 .slider-images img {
-    width: 25vw;
-    height: 25vw;
+    width: 23vw;
+    height: 23vw;
     object-fit: cover;
     display: none;
     border-radius: 50px;
@@ -119,8 +156,8 @@ nav ul li a {
 
 /* Slider Buttons */
 .slider-button {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: rgb(0, 0, 0);
+    background-color: black;
+    color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -134,46 +171,57 @@ nav ul li a {
     background-color: rgba(214, 211, 211, 0.8);
     scale: 1.05;
 }
+
 .slider-button:active {
     background-color: rgba(214, 211, 211, 0.8);
     scale: 0.95;
 }
 
 /* SECTION 3 */
-/* SECTION 3 */
 #section3 {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px 10%;
-    background-image: url("/image/background.png");
+    background-image: url("/image/background.jpg");
     background-size: cover;
-    border-radius: 10px;
-    height: 70vh;
+    height: 100vh;
     overflow: hidden;
 }
 
 #section3 .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 800px;
+    width: 99vw;
     text-align: center;
 }
 
 #section3 .container-main {
-    flex: 1;
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-#section3 .container-main h1 {
+#section3 .container1,
+#section3 .container2,
+#section3 .container3 {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.151);
+    margin: 40px;
+    border-radius: 30px;
+}
+
+#section3 .container1 h1,
+#section3 .container2 h1,
+#section3 .container3 h1 {
     font-size: 24px;
-    color: #2E4A2F;
+    color: white;
     margin-bottom: 10px;
 }
 
-#section3 .container-main p {
+#section3 .container1 p {
     font-size: 16px;
     color: #555;
     margin-bottom: 20px;
@@ -181,13 +229,19 @@ nav ul li a {
 
 #section3 .title h1 {
     font-size: 20px;
-    color: #036403;
+    color: white;
     margin-bottom: 20px;
 }
 
+#section3 h1 {
+    color: white;
+    font-size: 30px;
+}
+
+
 #section3 .album img {
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     border-radius: 10px;
     object-fit: cover;
     margin-bottom: 20px;
@@ -196,6 +250,9 @@ nav ul li a {
 #section3 audio {
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    width: 14vw;
 }
 
 #section3 .slider-button {
@@ -220,12 +277,51 @@ nav ul li a {
 }
 
 /* SECTION 4 */
+#section4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background-image: url("/image/background2.jpg");
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    gap: 40px;
+}
+
+#section4 .content {
+    background-color: rgba(255, 255, 255, 0.068);
+    padding: 70px;
+    border-radius: 40px;
+    width: 60vw;
+    box-shadow: 5px 5px 8px #000;
+    align-items: center;
+}
+
+#section4 .content h1,
+#section4 .content p {
+    color: white;
+}
+
+#section4 .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section4 .video video {
+    width: 45vw;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #000;
+}
 
 
 
 /* SECTION 5 */
 #section5 {
-    background: #d3fdd3;
+    background-image: url("/image/background.jpg");
+    background-size: cover;
     text-align: center;
     padding: 50px 10%;
 }
@@ -234,21 +330,25 @@ nav ul li a {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background: white;
-    border-radius: 10px;
+    background: rgba(15, 15, 15, 0.5);
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.contact-container h1 {
-    color: #2E4A2F;
-    font-size: 28px;
+#section4 h1 {
+    color: #ffffff;
+    font-size: 35px;
     margin-bottom: 10px;
 }
 
 .contact-container p {
-    color: #555;
+    color: #ffffff;
     font-size: 16px;
     margin-bottom: 20px;
+}
+
+.contact-container h1 {
+    color: #ffffff;
 }
 
 .contact-container ul {
@@ -258,13 +358,12 @@ nav ul li a {
 
 .contact-container ul li {
     font-size: 16px;
-    color: #333;
+    color: #ffffff;
     margin: 8px 0;
 }
 
-
 footer {
-    background: #036403;
+    background: #050505;
     color: white;
     text-align: center;
     padding: 20px;
