@@ -46,7 +46,6 @@ header .btn {
 }
 
 /* SECTION 1 */
-
 #section1 {
     display: flex;
     align-items: center;
@@ -141,19 +140,6 @@ header .btn {
     display: block;
 }
 
-#section2 .slider-images {
-    transition: transform 0.5s ease-in-out;
-}
-
-#section2 .slider-images img {
-    width: 23vw;
-    height: 23vw;
-    object-fit: cover;
-    display: none;
-    border-radius: 50px;
-    box-shadow: 5px 5px 8px #000;
-}
-
 /* Slider Buttons */
 .slider-button {
     background-color: black;
@@ -238,7 +224,6 @@ header .btn {
     font-size: 30px;
 }
 
-
 #section3 .album img {
     width: 350px;
     height: 350px;
@@ -253,27 +238,6 @@ header .btn {
     margin-bottom: 20px;
     opacity: 0.8;
     width: 14vw;
-}
-
-#section3 .slider-button {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: rgb(0, 0, 0);
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-    border-radius: 5px;
-}
-
-#section3 .slider-button:hover {
-    background-color: rgba(214, 211, 211, 0.8);
-    scale: 1.05;
-}
-
-#section3 .slider-button:active {
-    background-color: rgba(214, 211, 211, 0.8);
-    scale: 0.95;
 }
 
 /* SECTION 4 */
@@ -316,8 +280,6 @@ header .btn {
     box-shadow: 5px 5px 10px #000;
 }
 
-
-
 /* SECTION 5 */
 #section5 {
     background-image: url("/image/background.jpg");
@@ -333,12 +295,6 @@ header .btn {
     background: rgba(15, 15, 15, 0.5);
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#section4 h1 {
-    color: #ffffff;
-    font-size: 35px;
-    margin-bottom: 10px;
 }
 
 .contact-container p {
